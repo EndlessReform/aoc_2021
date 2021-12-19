@@ -1,7 +1,7 @@
 use std::env;
 use std::fs;
 
-mod day3;
+mod day4;
 
 #[derive(Debug)]
 pub enum Error {
@@ -28,5 +28,5 @@ fn main() -> Result<(), Error> {
     let s: String = fs::read_to_string(&fname)?;
     println!("File exists; reading...");
 
-    day3::day3(s)
+    day4::day4(&s)
 }
