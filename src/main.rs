@@ -2,7 +2,7 @@ use std::env;
 use std::fs;
 use std::error::Error;
 
-mod day5;
+mod day6;
 
 fn main() -> Result<(), Box<dyn Error>> {
     let args: Vec<String> = env::args().collect();
@@ -11,5 +11,5 @@ fn main() -> Result<(), Box<dyn Error>> {
     let s: String = fs::read_to_string(&fname)?;
     println!("File exists; reading...");
 
-    day5::day5(&s)
+    day6::day6(&s)
 }
